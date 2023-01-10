@@ -1,0 +1,17 @@
+clear
+clc
+
+totalTP = 18; 
+maxima1_11 =[];
+maximavector = 1:totalTP;
+
+load maxima1.mat;
+
+    maxima1max = [];
+        for nSpot = 1:length(maxima1)
+         
+          if maxima1(nSpot).POSITION.position == (maximavector) %later need to change to n positons I think 
+              maxima1(maximavector) = [maxima1(maximavector),maxima1(nSpot,:)]
+          end
+       
+        end
